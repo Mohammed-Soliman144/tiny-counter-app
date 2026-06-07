@@ -143,6 +143,7 @@ body {
   --gap-4xl: 1.75rem;
   --gap-5xl: 2rem;
   --gap-6xl: 3rem;
+  --gap-7xl: 5rem;
 
   /* inter font-family */
   --font-inter: "Inter Custom", system-ui, sans-serif;

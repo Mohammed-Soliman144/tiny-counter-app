@@ -1,6 +1,6 @@
 /**************************** Settings Page **********************************************/
 .formSettings {
-  margin-top: var(--gap-2xl);
+  margin-top: var(--gap-7xl);
   background-color: var(--bg-dark-theme);
   display: flex;
   flex-flow: column;
