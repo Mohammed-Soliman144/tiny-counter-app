@@ -1,0 +1,59 @@
+/**************************** Modal **********************************************/
+.modal {
+  position: absolute;
+  inset: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-6xl);
+  color: var(--text-primary);
+  transition:
+    opacity 0.5s ease-in-out,
+    trasnform 0.5s ease-in-out;
+}
+
+.modalOpenned {
+  animation: fade-up 0.5s ease-in-out;
+}
+
+.modalClosed {
+  animation: fade-down 0.5s ease-in-out;
+}
+
+.modalBtnClose {
+  position: absolute;
+  top: 25px;
+  right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+@keyframes fade-up {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-down {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+}
+/**************************** Modal **********************************************/

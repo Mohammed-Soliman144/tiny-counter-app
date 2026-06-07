@@ -1,0 +1,23 @@
+/**************************** Button **********************************************/
+.button {
+  font-family: var(--font-inter);
+  border: var(--border-xs) solid var(--text-primary);
+  border-radius: var(--raduis-rounded);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition:
+    transform 0.5s ease-in-out,
+    opacity 0.5s ease-in-out;
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  font-size: var(--font-md);
+  font-weight: bolder;
+}
+
+.button:hover {
+  transform: scale(1.2);
+  opacity: 80%;
+  border-color: rgba(var(--bg-primary) / 1);
+}
+/**************************** Button **********************************************/

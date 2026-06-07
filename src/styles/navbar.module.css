@@ -1,0 +1,42 @@
+/**************************** Navbar **********************************************/
+.navbarMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-5xl);
+  padding-block: var(--gap-lg);
+  position: relative;
+  z-index: 10;
+}
+
+.btnNavigation {
+  background-color: transparent;
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btnNavigation svg {
+  fill: var(--bg-primary);
+  stroke: var(--text-primary);
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.btnNavigation svg:hover {
+  transform: scale(1.2);
+}
+
+.btnToggle {
+  transform: rotate(0deg);
+  transition: transform 0.5s ease;
+}
+
+.btnNavigation.btnToggle.toggleDark {
+  transform: rotate(180deg);
+}
+
+/**************************** Navbar **********************************************/

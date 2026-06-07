@@ -1,0 +1,51 @@
+/**************************** Footer **********************************************/
+.footer {
+  grid-column: 1 / 4;
+  grid-row: 5 / 6;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mainHeading {
+  font-family: var(--font-inter);
+  font-size: var(--font-md);
+  font-weight: 500;
+  transform: scale(1.2);
+  letter-spacing: 0.2px;
+}
+
+.mainParagraph {
+  font-family: var(--font-inter);
+  font-size: var(--font-base);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  text-wrap: pretty;
+}
+
+.animatedFlash {
+  transition: opacity 0.8s ease-in-out;
+  animation: flash 0.8s infinite ease-in-out alternate;
+}
+
+@media (max-width: 40rem) {
+  .footer h2 {
+    font-size: var(--font-base);
+  }
+  .footer p {
+    font-size: var(--font-xs);
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+/**************************** Footer **********************************************/

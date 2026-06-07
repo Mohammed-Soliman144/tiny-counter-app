@@ -1,0 +1,22 @@
+/**************************** Reset Page **********************************************/
+.mainHeading {
+  text-transform: capitalize;
+  font-size: var(--font-2xl);
+}
+
+.btnControls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-2xl);
+}
+
+.btnSpecial {
+  border-radius: var(--border-sm);
+  padding: var(--padding-sm);
+  width: 10rem;
+  text-transform: capitalize;
+}
+
+/**************************** Reset Page **********************************************/

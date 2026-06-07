@@ -1,0 +1,299 @@
+/* Reset Default CSS Styles */
+/* 1. box-sizing, margin, padding */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* 2- list */
+ul,
+ol {
+  list-style: none;
+}
+/* 3- Media elements */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* 4- Form elements */
+input,
+textarea,
+button,
+select {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* @font-face inter 100 */
+@font-face {
+  font-family: "Inter Custom";
+  src: "../assets/fonts/inter-100.woff2" format("woff2");
+  font-weight: 100;
+  font-display: swap;
+}
+
+/* @font-face inter 200 */
+@font-face {
+  font-family: "Inter Custom";
+  src: "../assets/fonts/inter-regular.woff2" format("woff2");
+  font-weight: 200;
+  font-display: swap;
+}
+
+/* @font-face inter 300 */
+@font-face {
+  font-family: "Inter Custom";
+  src: "../assets/fonts/inter-300.woff2" format("woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+/* @font-face inter 400 */
+@font-face {
+  font-family: "Inter Custom";
+  src: "../assets/fonts/inter-400.woff2" format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+/* @font-face inter 600 */
+@font-face {
+  font-family: "Inter Custom";
+  src: "../assets/fonts/inter-600.woff2" format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+/* 5- root elements, text-rendering, font-smoothing */
+html,
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-primary);
+}
+
+/* Primitive Theme variables */
+:root {
+  /* color palette */
+  --color-dark-pink: #ff1493;
+  --color-medium-orchid: #ba55d3;
+  --color-blue-violet: #8a2be2;
+  --color-slate-gray: #708090;
+  --color-dark-turquoise: #00ced1;
+  --color-sea-green: #20b2aa;
+  --color-royal-blue: #4169e1;
+  --color-dark-blue: #1e90ff;
+  --color-sky-blue: #00bfff;
+  --color-steel-blue: #4682b4;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-red-shine: #f44436;
+
+  /* padding */
+  --padding-inline-sm: 1rem;
+  --padding-inline-md: 1.25rem;
+  --padding-inline-lg: 1.5rem;
+  --padding-inline-xl: 2.25rem;
+
+  /* border-width */
+  --border-xs: 0.125rem;
+  --border-sm: 0.25rem;
+  --border-md: 0.5rem;
+
+  /* border-radius */
+  --raduis-rounded: 50%;
+  --radius-capsule: 9999px;
+
+  /* font-size */
+  --font-xs: 0.85rem;
+  --font-base: 1rem;
+  --font-md: 1.25rem;
+  --font-lg: 1.5rem;
+  --font-xl: 1.75rem;
+  --font-2xl: 2.25rem;
+  --font-3xl: 5rem;
+  --font-4xl: 7.5rem;
+  --font-5xl: 10rem;
+  --font-6xl: 12rem;
+  --font-7xl: 15rem;
+  --font-8xl: 18rem;
+  --font-9xl: 20rem;
+
+  /* Spacing and gap */
+  --gap-sm: 0.25rem;
+  --gap-md: 0.5rem;
+  --gap-lg: 0.75rem;
+  --gap-xl: 1rem;
+  --gap-2xl: 1.25rem;
+  --gap-3xl: 1.5rem;
+  --gap-4xl: 1.75rem;
+  --gap-5xl: 2rem;
+  --gap-6xl: 3rem;
+
+  /* inter font-family */
+  --font-inter: "Inter Custom", system-ui, sans-serif;
+
+  /* Shadow-box */
+  --shadow-minimal: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
+  --shadow-soft:
+    0 4px 6px -1px rgba(0, 0, 0, 0, 05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-deep:
+    0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 16px -6px rgba(0, 0, 0, 0.05);
+  --shadow-glass-morphism:
+    0 0 0 1px rgba(0, 0, 0, 0.05), 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+:root,
+[data-theme="light"] {
+  --bg-primary: var(--color-white);
+  --text-primary: var(--color-black);
+}
+
+[data-theme="dark"] {
+  --bg-primary: var(--color-black);
+  --text-primary: var(--color-white);
+}
+
+[data-theme="dark-pink"] {
+  --bg-primary: var(--color-dark-pink);
+  --text-primary: var(--color-black);
+}
+
+[data-theme="medium-orchid"] {
+  --bg-primary: var(--color-medium-orchid);
+  --text-primary: var(--color-black);
+}
+
+[data-theme="blue-violet"] {
+  --bg-primary: var(--color-blue-violet);
+  --text-primary: var(--color-black);
+}
+
+[data-theme="slate-gray"] {
+  --bg-primary: var(--color-slate-gray);
+  --text-primary: var(--color-black);
+}
+
+[data-theme="dark-turquoise"] {
+  --bg-primary: var(--color-dark-turquoise);
+  --text-primary: var(--color-black);
+}
+
+[data-theme="sea-green"] {
+  --bg-primary: var(--color-sea-green);
+  --text-primary: var(--color-black);
+}
+
+[data-theme="royal-blue"] {
+  --bg-primary: var(--color-royal-blue);
+  --text-primary: var(--color-black);
+}
+
+[data-theme="dark-blue"] {
+  --bg-primary: var(--color-dark-blue);
+  --text-primary: var(--color-black);
+}
+
+[data-theme="sky-blue"] {
+  --bg-primary: var(--color-sky-blue);
+  --text-primary: var(--color-black);
+}
+
+[data-theme="steel-blue"] {
+  --bg-primary: var(--color-steel-blue);
+  --text-primary: var(--color-black);
+}
+
+/* container */
+.container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: var(--padding-inline-sm);
+  max-width: none;
+}
+
+@media (max-width: 40rem) {
+  .container {
+    padding-inline: var(--padding-inline-sm);
+    max-width: calc(40rem - calc(2 * var(--padding-inline-sm)));
+  }
+}
+
+@media (max-width: 48rem) {
+  .container {
+    padding-inline: var(--padding-inline-md);
+    max-width: calc(48rem - calc(2 * var(--padding-inline-md)));
+  }
+}
+
+@media (max-width: 64rem) {
+  .container {
+    padding-inline: var(--padding-inline-lg);
+    max-width: calc(64rem - calc(2 * var(--padding-inline-lg)));
+  }
+}
+
+@media (max-width: 80rem) {
+  .container {
+    padding-inline: var(--padding-inline-xl);
+    max-width: calc(80rem - calc(2 * var(--padding-inline-xl)));
+  }
+}
+
+@media (max-width: 96rem) {
+  .container {
+    padding-inline: var(--padding-inline-xl);
+    max-width: calc(96rem - calc(2 * var(--padding-inline-xl)));
+  }
+}
+
+/* #root */
+#root {
+  min-height: 100vh;
+  display: block;
+  font-family: var(--font-inter);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-size: var(--font-base);
+  font-family: var(--font-inter);
+}
+
+/* page-wrapper */
+.page-wrapper {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto 1fr;
+  place-content: center;
+  place-items: center;
+  font-family: var(--font-inter);
+  position: relative;
+}
+
+body,
+.nav-controls,
+.footer,
+.section-counter,
+.modal-section,
+.page-wrapper,
+button,
+input {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}

@@ -1,0 +1,78 @@
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-xl);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.mainHeading {
+  font-size: clamp(var(--font-3xl), var(--font-xl), var(--font-lg));
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.mainParag {
+  font-size: var(--font-md);
+  text-wrap: wrap;
+}
+.mainParag::first-letter {
+  text-transform: capitalize;
+}
+
+.mainParag abbr {
+  padding-left: calc(var(--padding-inline-sm) * 0.25);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.specialLink {
+  color: var(--color-sea-green);
+  padding: calc(var(--padding-inline-md) * 0.5);
+  font-size: var(--font-md);
+  font-weight: 500;
+  border-radius: var(--border-md);
+  background-color: color-mix(var(--bg-primary) 90%, transparent);
+  border: var(--border-xs) solid var(--text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-md);
+  box-shadow: var(--shadow-soft);
+  text-decoration: none;
+}
+.specialLink:hover {
+  box-shadow: var(--shadow-deep);
+}
+
+.specialLink svg {
+  color: var(--color-red-shine);
+  fill: var(--color-red-shine);
+  transition: transform 2.4s ease-in-out;
+  animation: bounce 2.4s ease-in-out infinite;
+}
+.specialLink span::first-letter {
+  text-transform: capitalize;
+}
+
+.link {
+  font-size: var(--font-md);
+  font-weight: 500;
+  text-transform: capitalize;
+  border: var(--border-xs) solid var(--color-white);
+  color: var(--color-sea-green);
+  background-color: color-mix(var(--bg-primary) 90%, transparent);
+  padding: calc(var(--padding-inline-md) * 0.5);
+  text-decoration: none;
+  border-radius: var(--border-md);
+}
+
+@keyframes bounce {
+  100% {
+    transform: scale(1.2);
+  }
+}
