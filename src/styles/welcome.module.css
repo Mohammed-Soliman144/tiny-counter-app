@@ -63,7 +63,7 @@
   font-size: var(--font-md);
   font-weight: 500;
   text-transform: capitalize;
-  border: var(--border-xs) solid var(--color-white);
+  border: var(--border-xs) solid var(--text-primary);
   color: var(--color-sea-green);
   background-color: color-mix(var(--bg-primary) 90%, transparent);
   padding: calc(var(--padding-inline-md) * 0.5);
