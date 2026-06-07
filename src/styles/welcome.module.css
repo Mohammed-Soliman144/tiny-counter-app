@@ -19,6 +19,7 @@
 .mainParag {
   font-size: var(--font-md);
   text-wrap: wrap;
+  text-align: center;
 }
 .mainParag::first-letter {
   text-transform: capitalize;
