@@ -14,7 +14,7 @@ export const Intro = () => {
     const isIntroOpenned = useModalStore(isIntro)
     const isAnimatedEnd = useModalStore(isAnimationEnd)
 
-    return <section className={`${styles.intro}`} onAnimationEnd={(e: React.AnimationEvent) => {
+    return <section className={`container ${styles.intro}`} onAnimationEnd={(e: React.AnimationEvent) => {
             // ensures that onAnimationEnd event fires from parent section not from h2 or p (has other animations)
             // also onAnimationEnd or onTransitionEnd fires at first animation finished 
             // e.currentTarget refer to onAnimationEnd event fires from parent not from child
