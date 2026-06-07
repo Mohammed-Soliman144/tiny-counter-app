@@ -27,7 +27,9 @@
 
 .modalBtnClose {
   position: absolute;
-  top: 25px;
+  width: 3.25rem;
+  height: 3.25rem;
+  top: 12px;
   right: 12px;
   display: flex;
   justify-content: center;

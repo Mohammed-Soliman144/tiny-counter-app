@@ -41,6 +41,12 @@
     all 1.2s ease;
   animation: fade-left 1.2s ease 1.2s both;
 }
+
+@media (max-width: 48rem) {
+  .mainParag {
+    font-size: var(--font-base);
+  }
+}
 .mainParag::first-letter {
   text-transform: capitalize;
 }
